@@ -1,0 +1,72 @@
+:root {
+  --page-bg: #f3f0ea;
+  --panel-bg: #fffdf8;
+  --text: #22201c;
+  --muted: #6a6459;
+  --border: rgba(34, 32, 28, 0.15);
+  --shadow: 0 30px 78px rgba(56, 44, 30, 0.16);
+  --accent: #b68a2d;
+  --accent-2: #202020;
+  --accent-3: #d8c39a;
+  --link-bg: #ffffff;
+  --link-hover: #fbf7ed;
+}
+
+body {
+  background:
+    linear-gradient(90deg, rgba(182, 138, 45, 0.24) 0 1px, transparent 1px),
+    linear-gradient(180deg, rgba(182, 138, 45, 0.18) 0 1px, transparent 1px),
+    linear-gradient(135deg, #f8f5ed, #ebe5da);
+  background-size: 38px 38px, 38px 38px, auto;
+}
+
+.profile-panel {
+  border-width: 2px;
+}
+
+.brand-lockup {
+  text-align: left;
+}
+
+.brand-logo,
+.eyebrow,
+h1,
+.intro {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.brand-logo {
+  filter: grayscale(1) contrast(1.08);
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 13ch;
+  font-family: var(--font-sans);
+  font-size: clamp(2.25rem, 9vw, 3.9rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.link-card {
+  min-height: 74px;
+  border-color: rgba(182, 138, 45, 0.25);
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  box-shadow: 0 12px 0 rgba(182, 138, 45, 0.12), 0 18px 32px rgba(34, 32, 28, 0.1);
+}
+
+.link-icon {
+  color: #ffffff;
+  background: var(--accent-2);
+}
+
+.primary-link .link-icon {
+  background: var(--accent);
+}

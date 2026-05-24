@@ -1,0 +1,56 @@
+:root {
+  --page-bg: #fdf6e6;
+  --panel-bg: rgba(255, 252, 244, 0.9);
+  --text: #211b16;
+  --muted: #71645a;
+  --border: rgba(33, 27, 22, 0.16);
+  --shadow: 0 30px 90px rgba(194, 72, 31, 0.2);
+  --accent: #e93749;
+  --accent-2: #0878c9;
+  --accent-3: #ffd044;
+  --link-bg: rgba(255, 255, 255, 0.66);
+  --link-hover: #fffdfa;
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 208, 68, 0.72) 0 12%, transparent 13%),
+    radial-gradient(circle at 82% 20%, rgba(8, 120, 201, 0.32) 0 13%, transparent 14%),
+    radial-gradient(circle at 84% 82%, rgba(233, 55, 73, 0.34) 0 16%, transparent 17%),
+    linear-gradient(135deg, #fff7dd 0%, #f9fbff 48%, #fff0f3 100%);
+}
+
+.page-shell::before {
+  width: 52vw;
+  height: 52vw;
+  left: -18vw;
+  bottom: -24vw;
+  background: repeating-conic-gradient(from 8deg, rgba(33, 27, 22, 0.12) 0 8deg, transparent 8deg 16deg);
+  border-radius: 50%;
+}
+
+.profile-panel {
+  backdrop-filter: blur(22px);
+}
+
+h1 {
+  color: #191410;
+}
+
+.link-card:nth-child(2) .link-icon {
+  color: #ffffff;
+  background: var(--accent-2);
+}
+
+.link-card:nth-child(3) .link-icon {
+  background: #63c985;
+}
+
+.link-card:nth-child(4) .link-icon {
+  color: #ffffff;
+  background: #7c54cc;
+}
+
+.link-card:nth-child(5) .link-icon {
+  background: #ff8a3d;
+}

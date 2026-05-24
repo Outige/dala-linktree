@@ -1,0 +1,65 @@
+:root {
+  --page-bg: #f6f8ff;
+  --panel-bg: rgba(255, 255, 255, 0.92);
+  --text: #1b1d2a;
+  --muted: #636878;
+  --border: rgba(27, 29, 42, 0.14);
+  --shadow: 0 28px 78px rgba(29, 76, 151, 0.18);
+  --accent: #ef3f7a;
+  --accent-2: #1d8bde;
+  --accent-3: #ffd43d;
+  --link-bg: rgba(255, 255, 255, 0.82);
+  --link-hover: #ffffff;
+}
+
+body {
+  background:
+    linear-gradient(45deg, transparent 0 24%, rgba(29, 139, 222, 0.2) 24% 36%, transparent 36%),
+    linear-gradient(135deg, transparent 0 62%, rgba(239, 63, 122, 0.2) 62% 76%, transparent 76%),
+    radial-gradient(circle at 12% 84%, rgba(255, 212, 61, 0.7) 0 10%, transparent 11%),
+    #f6f8ff;
+}
+
+.page-shell::before {
+  width: 62vw;
+  height: 62vw;
+  right: -30vw;
+  top: -34vw;
+  background: repeating-conic-gradient(from 45deg, rgba(29, 139, 222, 0.22) 0 7deg, transparent 7deg 15deg);
+  border-radius: 50%;
+}
+
+.profile-panel {
+  backdrop-filter: blur(18px);
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 10ch;
+  font-family: var(--font-sans);
+  font-size: clamp(2.65rem, 11vw, 4.55rem);
+  font-weight: 800;
+  line-height: 0.92;
+}
+
+.link-icon {
+  color: #ffffff;
+  background: var(--accent-2);
+}
+
+.primary-link .link-icon,
+.link-card:nth-child(4) .link-icon {
+  background: var(--accent);
+}
+
+.link-card:nth-child(3) .link-icon {
+  color: #1b1d2a;
+  background: var(--accent-3);
+}
+
+.link-card:nth-child(5) .link-icon {
+  background: #37b46b;
+}

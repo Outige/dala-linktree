@@ -1,0 +1,55 @@
+:root {
+  --page-bg: #f2efe5;
+  --panel-bg: rgba(255, 250, 239, 0.93);
+  --text: #241c14;
+  --muted: #73685d;
+  --border: rgba(70, 48, 28, 0.2);
+  --shadow: 0 26px 76px rgba(74, 45, 18, 0.2);
+  --accent: #2e6f63;
+  --accent-2: #c84b32;
+  --accent-3: #e9bc44;
+  --link-bg: rgba(255, 252, 245, 0.82);
+  --link-hover: #fffdf7;
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(46, 111, 99, 0.12), transparent 34%),
+    linear-gradient(315deg, rgba(200, 75, 50, 0.12), transparent 38%),
+    repeating-linear-gradient(0deg, rgba(87, 63, 39, 0.06) 0 1px, transparent 1px 18px),
+    #f2efe5;
+}
+
+.profile-panel {
+  outline: 10px solid rgba(255, 255, 255, 0.24);
+}
+
+.developer-tools,
+.link-card,
+.social-row a {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0));
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 10ch;
+}
+
+.link-icon {
+  color: #241c14;
+  background: var(--accent-3);
+}
+
+.primary-link .link-icon {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.link-card:nth-child(2) .link-icon,
+.link-card:nth-child(5) .link-icon {
+  color: #ffffff;
+  background: var(--accent-2);
+}

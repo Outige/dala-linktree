@@ -1,0 +1,90 @@
+:root {
+  --page-bg: #eef1f4;
+  --panel-bg: #ffffff;
+  --text: #14181c;
+  --muted: #58616b;
+  --border: rgba(20, 24, 28, 0.12);
+  --shadow: 0 26px 70px rgba(36, 47, 60, 0.16);
+  --accent: #e44336;
+  --accent-2: #1f6fbf;
+  --accent-3: #f1c846;
+  --link-bg: #f8fafc;
+  --link-hover: #ffffff;
+}
+
+body {
+  background:
+    linear-gradient(90deg, #e44336 0 8px, transparent 8px 100%),
+    linear-gradient(180deg, #eef1f4 0%, #ffffff 100%);
+}
+
+.profile-panel {
+  padding-top: clamp(18px, 3vw, 24px);
+}
+
+.developer-tools {
+  margin-bottom: 22px;
+}
+
+.brand-lockup {
+  text-align: left;
+}
+
+.brand-logo {
+  margin-left: 0;
+}
+
+.eyebrow,
+h1,
+.intro {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 13ch;
+  font-family: var(--font-sans);
+  font-size: clamp(2.3rem, 9vw, 4rem);
+  font-weight: 800;
+  line-height: 0.98;
+}
+
+.link-list {
+  gap: 10px;
+}
+
+.link-card {
+  grid-template-columns: 54px 1fr;
+  border-left: 5px solid var(--accent);
+}
+
+.link-card:nth-child(2) {
+  border-left-color: var(--accent-2);
+}
+
+.link-card:nth-child(3) {
+  border-left-color: var(--accent-3);
+}
+
+.link-card:nth-child(4) {
+  border-left-color: #32a071;
+}
+
+.link-card:nth-child(5) {
+  border-left-color: #7b61d1;
+}
+
+.link-icon {
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--border);
+}
+
+.primary-link .link-icon {
+  color: #ffffff;
+  background: var(--accent);
+}

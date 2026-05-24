@@ -1,0 +1,77 @@
+:root {
+  --page-bg: #f7fbff;
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --text: #162338;
+  --muted: #607086;
+  --border: rgba(22, 35, 56, 0.14);
+  --shadow: 0 30px 82px rgba(20, 87, 137, 0.18);
+  --accent: #1f7fd1;
+  --accent-2: #28b8b8;
+  --accent-3: #f0b949;
+  --link-bg: rgba(255, 255, 255, 0.78);
+  --link-hover: #ffffff;
+}
+
+body {
+  background:
+    linear-gradient(115deg, rgba(31, 127, 209, 0.24) 0 22%, transparent 22% 100%),
+    linear-gradient(300deg, rgba(240, 185, 73, 0.2) 0 18%, transparent 18% 100%),
+    radial-gradient(circle at 82% 12%, rgba(40, 184, 184, 0.3) 0 13%, transparent 14%),
+    #f7fbff;
+}
+
+.page-shell::after {
+  width: 44vw;
+  height: 44vw;
+  left: -20vw;
+  bottom: -20vw;
+  border: 28px solid rgba(31, 127, 209, 0.18);
+  border-radius: 50%;
+}
+
+.profile-panel {
+  backdrop-filter: blur(18px);
+}
+
+.brand-logo {
+  filter: contrast(1.05);
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 12ch;
+}
+
+.link-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.link-card::after {
+  content: "";
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  border: 12px solid rgba(40, 184, 184, 0.16);
+  transform: rotate(18deg);
+}
+
+.link-icon {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.primary-link .link-icon,
+.link-card:nth-child(3) .link-icon {
+  background: var(--accent-2);
+}
+
+.link-card:nth-child(4) .link-icon {
+  color: #162338;
+  background: var(--accent-3);
+}

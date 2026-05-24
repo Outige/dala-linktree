@@ -1,0 +1,67 @@
+:root {
+  --page-bg: #fffaf6;
+  --panel-bg: rgba(255, 255, 255, 0.88);
+  --text: #18151d;
+  --muted: #675f6d;
+  --border: rgba(24, 21, 29, 0.14);
+  --shadow: 0 30px 84px rgba(101, 43, 123, 0.18);
+  --accent: #7e4bd8;
+  --accent-2: #ff5a4d;
+  --accent-3: #2ec28b;
+  --link-bg: rgba(255, 255, 255, 0.74);
+  --link-hover: #ffffff;
+}
+
+body {
+  background:
+    linear-gradient(35deg, rgba(126, 75, 216, 0.2) 0 18%, transparent 18% 100%),
+    linear-gradient(160deg, rgba(46, 194, 139, 0.2) 0 22%, transparent 22% 100%),
+    radial-gradient(circle at 80% 76%, rgba(255, 90, 77, 0.3) 0 15%, transparent 16%),
+    #fffaf6;
+}
+
+.page-shell::before {
+  width: 58vw;
+  height: 58vw;
+  left: -24vw;
+  top: -26vw;
+  background:
+    linear-gradient(90deg, transparent 42%, rgba(126, 75, 216, 0.2) 42% 58%, transparent 58%),
+    linear-gradient(0deg, transparent 42%, rgba(255, 90, 77, 0.18) 42% 58%, transparent 58%);
+  transform: rotate(20deg);
+}
+
+.profile-panel {
+  backdrop-filter: blur(20px);
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 10ch;
+}
+
+.link-card {
+  border-bottom-width: 3px;
+}
+
+.link-icon {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.primary-link .link-icon,
+.link-card:nth-child(5) .link-icon {
+  background: var(--accent-2);
+}
+
+.link-card:nth-child(3) .link-icon {
+  background: var(--accent-3);
+}
+
+.link-card:nth-child(4) .link-icon {
+  color: #18151d;
+  background: #f4d64b;
+}

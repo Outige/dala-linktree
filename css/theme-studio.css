@@ -1,0 +1,54 @@
+:root {
+  --page-bg: #f6f4ef;
+  --panel-bg: #fffffb;
+  --text: #1e1d1b;
+  --muted: #66615a;
+  --border: rgba(30, 29, 27, 0.13);
+  --shadow: 0 28px 70px rgba(49, 49, 43, 0.14);
+  --accent: #111111;
+  --accent-2: #c3362b;
+  --accent-3: #f0d84e;
+  --link-bg: #ffffff;
+  --link-hover: #fbfaf6;
+}
+
+body {
+  background:
+    linear-gradient(90deg, rgba(30, 29, 27, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(30, 29, 27, 0.05) 1px, transparent 1px),
+    #f6f4ef;
+  background-size: 44px 44px;
+}
+
+.profile-panel {
+  border-width: 2px;
+}
+
+.brand-logo {
+  filter: grayscale(1) contrast(1.1);
+}
+
+.eyebrow {
+  color: #c3362b;
+}
+
+h1 {
+  max-width: 12ch;
+}
+
+.link-card {
+  box-shadow: inset 4px 0 0 transparent;
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  box-shadow: inset 4px 0 0 #c3362b, 0 14px 28px rgba(30, 29, 27, 0.1);
+}
+
+.link-icon {
+  background: #f0d84e;
+}
+
+.primary-link .link-icon {
+  background: #111111;
+}

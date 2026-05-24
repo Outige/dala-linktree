@@ -1,0 +1,79 @@
+:root {
+  --page-bg: #eef5f0;
+  --panel-bg: rgba(253, 255, 251, 0.9);
+  --text: #16231f;
+  --muted: #5d6b66;
+  --border: rgba(22, 35, 31, 0.14);
+  --shadow: 0 28px 74px rgba(36, 83, 72, 0.18);
+  --accent: #1d8f73;
+  --accent-2: #d65a35;
+  --accent-3: #f4cd4a;
+  --link-bg: rgba(255, 255, 255, 0.76);
+  --link-hover: #ffffff;
+}
+
+body {
+  background:
+    radial-gradient(circle at 22% 14%, rgba(244, 205, 74, 0.58) 0 8%, transparent 9%),
+    radial-gradient(circle at 78% 12%, rgba(29, 143, 115, 0.34) 0 10%, transparent 11%),
+    radial-gradient(circle at 76% 84%, rgba(214, 90, 53, 0.26) 0 13%, transparent 14%),
+    linear-gradient(145deg, #eef5f0, #fff8ef);
+}
+
+.profile-panel {
+  backdrop-filter: blur(18px) saturate(1.2);
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 12ch;
+}
+
+.link-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.link-card::before {
+  content: "";
+  width: 7px;
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--accent);
+}
+
+.link-card:nth-child(2)::before {
+  background: var(--accent-2);
+}
+
+.link-card:nth-child(3)::before {
+  background: #2e72c8;
+}
+
+.link-card:nth-child(4)::before {
+  background: #8f57d6;
+}
+
+.link-card:nth-child(5)::before {
+  background: var(--accent-3);
+}
+
+.link-icon {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.link-card:nth-child(2) .link-icon {
+  background: var(--accent-2);
+}
+
+.link-card:nth-child(3) .link-icon {
+  background: #2e72c8;
+}
+
+.link-card:nth-child(4) .link-icon {
+  background: #8f57d6;
+}
