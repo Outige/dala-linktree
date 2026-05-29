@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dala | Creative Materials</title>
+    <meta
+      name="description"
+      content="Quick links for Dala creative materials, art supplies, craft projects, downloads, and contact details."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/base.css">
+    <link id="themeStylesheet" rel="stylesheet" href="css/theme-spectrum.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="profile-panel" aria-labelledby="page-title">
+        <div class="developer-tools" aria-label="Developer theme controls">
+          <label for="themeSelect">Developer style</label>
+          <select id="themeSelect" name="theme">
+            <option value="css/theme-spectrum.css">Spectrum Pop</option>
+            <option value="css/theme-studio.css">Clean Studio</option>
+            <option value="css/theme-workbench.css">Maker Workbench</option>
+            <option value="css/theme-dala-red-yellow.css">Dala Red + Yellow</option>
+            <option value="css/theme-pigment-lab.css">Pigment Lab</option>
+            <option value="css/theme-gallery-wall.css">Gallery Wall</option>
+            <option value="css/theme-night-market.css">Night Market</option>
+            <option value="css/theme-paper-cut.css">Paper Cut</option>
+            <option value="css/theme-terrazzo.css">Terrazzo Desk</option>
+            <option value="css/theme-catalogue.css">Modern Catalogue</option>
+            <option value="css/theme-hobby-x.css">Hobby X</option>
+            <option value="css/theme-sarcda.css">SARCDA</option>
+            <option value="css/theme-paperworld-me.css">Paperworld Middle East</option>
+            <option value="css/theme-creativeworld.css">Creativeworld</option>
+          </select>
+        </div>
+
+        <header class="brand-lockup">
+          <img class="brand-logo" src="image/Dala-logo.png" alt="Dala">
+          <p class="eyebrow">Creative materials for artists, makers, classrooms, and craft tables</p>
+          <h1 id="page-title">Bring your next idea into existence.</h1>
+          <p class="intro">
+            Paint, draw, sculpt, print, decorate, experiment. Start with the range, find a project, or get in touch with Dala.
+          </p>
+        </header>
+
+        <nav class="link-list" aria-label="Dala quick links">
+          <a class="link-card primary-link" href="https://www.dala.co.za/Products" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">01</span>
+            <span>
+              <strong>Shop the Dala Range</strong>
+              <small>Explore paints, drawing tools, craft supplies, kits, and accessories.</small>
+            </span>
+          </a>
+          <a class="link-card" href="https://www.dala.co.za/DIY-Projects" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">02</span>
+            <span>
+              <strong>DIY Projects</strong>
+              <small>Browse project ideas for home, school, workshops, and creative weekends.</small>
+            </span>
+          </a>
+          <a class="link-card" href="https://www.dala.co.za/Downloads" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">03</span>
+            <span>
+              <strong>Downloads</strong>
+              <small>Find catalogues, guides, product sheets, and useful brand resources.</small>
+            </span>
+          </a>
+          <a class="link-card" href="https://www.dala.co.za/About-Dala" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">04</span>
+            <span>
+              <strong>About Dala</strong>
+              <small>Learn about the company, its South African roots, and creative mission.</small>
+            </span>
+          </a>
+          <a class="link-card" href="https://www.dala.co.za/Contact-Us" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">05</span>
+            <span>
+              <strong>Contact and Trade Enquiries</strong>
+              <small>Reach the Dala team for stockist, product, and distribution questions.</small>
+            </span>
+          </a>
+        </nav>
+
+        <footer class="social-row" aria-label="Social links">
+          <a href="https://www.facebook.com/dalapaintsouthafrica/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/dalapaintsouthafrica/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/kv-art-dala/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      const themeSelect = document.querySelector("#themeSelect");
+      const themeStylesheet = document.querySelector("#themeStylesheet");
+      const savedTheme = localStorage.getItem("dala-theme");
+
+      if (savedTheme) {
+        themeSelect.value = savedTheme;
+        themeStylesheet.href = savedTheme;
+      }
+
+      themeSelect.addEventListener("change", (event) => {
+        const nextTheme = event.target.value;
+        themeStylesheet.href = nextTheme;
+        localStorage.setItem("dala-theme", nextTheme);
+      });
+    </script>
+  </body>
+</html>
