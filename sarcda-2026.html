@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Dala at SARCDA 2026. Large-scale manufacturing capability and a complete, experienced back-to-school education range."
+    >
+    <title>Dala at SARCDA 2026</title>
+    <style>
+      :root {
+        --red: #ed1c24;
+        --yellow: #ffe400;
+        --ink: #171923;
+        --paper: #fffaf0;
+        --graphite: #2f3440;
+        --steel: #506070;
+        --green: #087a49;
+        --blue: #155fa8;
+        --orange: #d96d00;
+        --teal: #0e7884;
+        --shadow: 0 18px 45px rgba(24, 24, 28, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-height: 100%;
+        background: #f5efe2;
+      }
+
+      body {
+        min-height: 100%;
+        margin: 0;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background:
+          linear-gradient(140deg, rgba(237, 28, 36, 0.13), transparent 34%),
+          linear-gradient(215deg, rgba(255, 228, 0, 0.38), transparent 42%),
+          linear-gradient(180deg, #fffaf0 0%, #f3eee3 100%);
+        overflow-x: hidden;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        content: "";
+        opacity: 0.44;
+        background-image:
+          linear-gradient(rgba(23, 25, 35, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(23, 25, 35, 0.06) 1px, transparent 1px);
+        background-size: 28px 28px;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 78%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        position: relative;
+        width: min(100%, 560px);
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 12px 14px 20px;
+      }
+
+      .float {
+        position: absolute;
+        z-index: 0;
+        display: grid;
+        min-width: 52px;
+        height: 30px;
+        place-items: center;
+        padding: 0 9px;
+        border: 2px solid rgba(255, 255, 255, 0.86);
+        border-radius: 9px;
+        color: #ffffff;
+        font-size: 0.62rem;
+        font-weight: 950;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.14);
+        box-shadow: 0 12px 24px rgba(24, 24, 28, 0.12);
+        transform: rotate(var(--tilt));
+        animation: bob 5.8s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      .float-a {
+        top: 86px;
+        left: -8px;
+        background: var(--graphite);
+        --tilt: -12deg;
+      }
+
+      .float-1 {
+        top: 156px;
+        right: -6px;
+        background: var(--red);
+        --tilt: 13deg;
+        animation-delay: -1.4s;
+      }
+
+      .float-b {
+        top: 334px;
+        left: 8px;
+        background: var(--blue);
+        --tilt: 10deg;
+        animation-delay: -2.5s;
+      }
+
+      .float-3 {
+        right: 14px;
+        bottom: 138px;
+        background: var(--green);
+        --tilt: -8deg;
+        animation-delay: -3.1s;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        padding: 10px 10px 5px;
+        text-align: center;
+      }
+
+      .logo-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: min(56vw, 178px);
+        min-height: 78px;
+        padding: 9px 13px;
+        border: 4px solid #fff;
+        border-radius: 999px;
+        background: #ffffff;
+        box-shadow: var(--shadow);
+        transform: rotate(-2deg);
+      }
+
+      .logo-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .summit-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0 9px;
+        padding: 7px 11px;
+        border: 1px solid rgba(23, 25, 35, 0.13);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 10px 24px rgba(24, 24, 28, 0.1);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .summit-pill::before {
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background: linear-gradient(135deg, var(--red) 0 48%, var(--yellow) 49% 100%);
+        content: "";
+      }
+
+      h1 {
+        max-width: 15ch;
+        margin: 0 auto;
+        font-size: clamp(2.05rem, 10.7vw, 3.65rem);
+        font-weight: 1000;
+        line-height: 0.92;
+        letter-spacing: 0;
+      }
+
+      .hero h1 span {
+        display: block;
+      }
+
+      .hero-copy {
+        max-width: 30rem;
+        margin: 11px auto 0;
+        font-size: 0.96rem;
+        font-weight: 760;
+        line-height: 1.38;
+      }
+
+      .capability-panel {
+        position: relative;
+        z-index: 1;
+        margin: 11px 0 10px;
+        padding: 13px;
+        border: 1px solid rgba(23, 25, 35, 0.12);
+        border-radius: 18px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.58)),
+          linear-gradient(135deg, rgba(237, 28, 36, 0.1), rgba(255, 228, 0, 0.16));
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .capability-kicker {
+        margin: 0 0 5px;
+        color: var(--red);
+        font-size: 0.71rem;
+        font-weight: 950;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .capability-panel h2 {
+        margin: 0;
+        font-size: clamp(1.24rem, 5vw, 1.72rem);
+        font-weight: 1000;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .capability-copy {
+        margin: 8px 0 11px;
+        color: rgba(23, 25, 35, 0.88);
+        font-size: 0.88rem;
+        font-weight: 720;
+        line-height: 1.38;
+      }
+
+      .capability-list {
+        display: grid;
+        gap: 7px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .capability-list li {
+        display: grid;
+        grid-template-columns: 23px 1fr;
+        align-items: center;
+        gap: 8px;
+        min-height: 32px;
+        color: #ffffff;
+        font-size: 0.79rem;
+        font-weight: 900;
+        line-height: 1.18;
+      }
+
+      .capability-list li::before {
+        display: grid;
+        width: 23px;
+        height: 23px;
+        place-items: center;
+        border-radius: 8px;
+        background: var(--ink);
+        color: var(--yellow);
+        content: ">";
+        font-size: 0.8rem;
+        font-weight: 1000;
+      }
+
+      .capability-list span {
+        display: block;
+        padding: 8px 9px;
+        border-radius: 10px;
+        background: var(--graphite);
+        box-shadow: 0 8px 16px rgba(24, 24, 28, 0.12);
+      }
+
+      .feature {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(96px, 31%) 1fr;
+        align-items: center;
+        gap: 7px;
+        margin: 10px 0 12px;
+        padding: 9px;
+        border: 1px solid rgba(23, 25, 35, 0.11);
+        border-radius: 18px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55)),
+          linear-gradient(135deg, rgba(21, 95, 168, 0.09), rgba(8, 122, 73, 0.08));
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .product-shot {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border: 1px solid rgba(23, 25, 35, 0.08);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .feature-text {
+        padding: 3px 2px;
+      }
+
+      .feature-text strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: clamp(1.05rem, 5.15vw, 1.5rem);
+        font-weight: 1000;
+        line-height: 1;
+      }
+
+      .feature-text p {
+        margin: 0;
+        font-size: 0.84rem;
+        font-weight: 700;
+        line-height: 1.38;
+      }
+
+      .links {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 9px;
+      }
+
+      .link-button {
+        display: grid;
+        grid-template-columns: 38px 1fr 22px;
+        align-items: center;
+        gap: 10px;
+        min-height: 56px;
+        padding: 8px 12px 8px 8px;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 14px;
+        color: #ffffff;
+        font-size: 0.94rem;
+        font-weight: 950;
+        line-height: 1.1;
+        text-decoration: none;
+        box-shadow: 0 14px 24px rgba(52, 29, 0, 0.16);
+        transform: translateY(0);
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease,
+          filter 160ms ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .link-button:focus-visible,
+      .social-link:focus-visible {
+        outline: 4px solid rgba(29, 28, 36, 0.8);
+        outline-offset: 4px;
+      }
+
+      .link-button:hover,
+      .link-button:focus-visible {
+        box-shadow: 0 18px 30px rgba(52, 29, 0, 0.24);
+        filter: saturate(1.08);
+        transform: translateY(-2px);
+      }
+
+      .link-button:active {
+        box-shadow: 0 8px 16px rgba(52, 29, 0, 0.18);
+        transform: translateY(1px) scale(0.99);
+      }
+
+      .contact {
+        background: linear-gradient(135deg, #ed1c24, #b81721);
+      }
+
+      .website {
+        background: linear-gradient(135deg, #155fa8, #0e7884);
+      }
+
+      .takealot {
+        background: linear-gradient(135deg, #087a49, #49a047);
+      }
+
+      .oem {
+        background: linear-gradient(135deg, #171923, #3a4350);
+      }
+
+      .amazon {
+        background: linear-gradient(135deg, #d96d00, #f2b705);
+        color: #221500;
+      }
+
+      .web-contact {
+        background: linear-gradient(135deg, #6b327c, #b12f68);
+      }
+
+      .button-icon,
+      .arrow {
+        display: grid;
+        place-items: center;
+      }
+
+      .button-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.22);
+      }
+
+      .link-text {
+        display: grid;
+        gap: 2px;
+      }
+
+      .link-title,
+      .link-meta {
+        display: block;
+      }
+
+      .link-meta {
+        font-size: 0.68rem;
+        font-weight: 780;
+        letter-spacing: 0.02em;
+        line-height: 1.22;
+        opacity: 0.82;
+      }
+
+      .amazon .button-icon {
+        background: rgba(255, 255, 255, 0.42);
+      }
+
+      svg {
+        display: block;
+      }
+
+      .socials {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin: 14px 0 10px;
+      }
+
+      .social-link {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.92);
+        border-radius: 13px;
+        color: #ffffff;
+        box-shadow: 0 12px 22px rgba(52, 29, 0, 0.15);
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .social-link:hover,
+      .social-link:focus-visible {
+        box-shadow: 0 18px 28px rgba(52, 29, 0, 0.22);
+        transform: translateY(-2px) rotate(-2deg);
+      }
+
+      .facebook {
+        background: #1877f2;
+      }
+
+      .instagram {
+        background:
+          radial-gradient(circle at 30% 105%, #feda75 0 24%, transparent 25%),
+          radial-gradient(circle at 12% 90%, #fa7e1e 0 28%, transparent 29%),
+          linear-gradient(135deg, #833ab4, #c13584 45%, #fd1d1d 78%, #fcb045);
+      }
+
+      .tiktok {
+        background:
+          linear-gradient(135deg, rgba(37, 244, 238, 0.95), transparent 34%),
+          linear-gradient(315deg, rgba(254, 44, 85, 0.95), transparent 36%),
+          #050505;
+      }
+
+      .footer {
+        position: relative;
+        z-index: 1;
+        padding: 10px 8px 0;
+        text-align: center;
+      }
+
+      .brand-message {
+        display: inline-block;
+        margin: 0;
+        padding: 8px 11px;
+        border: 1px solid rgba(23, 25, 35, 0.14);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 0.78rem;
+        font-weight: 950;
+      }
+
+      .chalk-line {
+        display: none;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 9px;
+        color: rgba(23, 25, 35, 0.68);
+        font-size: 0.72rem;
+        font-weight: 850;
+      }
+
+      .chalk-line span {
+        display: inline-block;
+        transform: rotate(var(--tilt));
+      }
+
+      @keyframes bob {
+        0%,
+        100% {
+          translate: 0 0;
+        }
+
+        50% {
+          translate: 0 -9px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media (min-width: 680px) {
+        body {
+          display: grid;
+          place-items: center;
+          padding: 32px;
+        }
+
+        .page {
+          min-height: auto;
+          border: 1px solid rgba(23, 25, 35, 0.1);
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.36);
+          box-shadow: 0 30px 80px rgba(24, 24, 28, 0.16);
+        }
+
+        .feature {
+          grid-template-columns: 170px 1fr;
+        }
+
+        .chalk-line {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page" aria-labelledby="page-title">
+      <span class="float float-a" aria-hidden="true">OEM</span>
+      <span class="float float-1" aria-hidden="true">QC</span>
+      <span class="float float-b" aria-hidden="true">BTS</span>
+      <span class="float float-3" aria-hidden="true">1992</span>
+
+      <section class="hero">
+        <div class="logo-wrap">
+          <img src="image/Dala-logo.png" alt="Dala">
+        </div>
+        <div class="summit-pill">SARCDA 2026</div>
+        <h1 id="page-title">
+          <span>Manufacturing</span>
+          <span>Scale for</span>
+          <span>Back-to-School</span>
+        </h1>
+        <p class="hero-copy">
+          High-volume production capability, category expertise, and retail-ready
+          educational ranges from a manufacturer trusted since 1992.
+        </p>
+      </section>
+
+      <nav class="links" aria-label="Dala links">
+        <a
+          class="link-button contact"
+          href="mailto:tieg@dala.co.za?subject=SARCDA%202026"
+          aria-label="Contact Dala by email about SARCDA 2026"
+        >
+          <span class="button-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Contact Dala</span>
+            <span class="link-meta">Manufacturing, trade, and SARCDA enquiries</span>
+          </span>
+          <span class="arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          class="link-button oem"
+          href="https://outige.github.io/dala-oem/"
+          aria-label="Visit the Dala OEM website"
+        >
+          <span class="button-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 8h14v11H5z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M8 8V5h8v3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 12h8M8 16h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">OEM &amp; Custom Manufacturing</span>
+            <span class="link-meta">Scale, private label, packing, and range builds</span>
+          </span>
+          <span class="arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          class="link-button website"
+          href="https://www.dala.co.za/"
+          aria-label="Visit the Dala website"
+        >
+          <span class="button-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M3.5 12h17M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3C9.6 5.5 8.4 8.5 8.4 12S9.6 18.5 12 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Visit Our Website</span>
+            <span class="link-meta">Explore the Dala product portfolio</span>
+          </span>
+          <span class="arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          class="link-button takealot"
+          href="https://www.takealot.com/all?filter=Brand:Dala&filter=Rating:4.0-5.0"
+          aria-label="Shop Dala products on Takealot"
+        >
+          <span class="button-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 8h13l-1.2 7.2H7.2L6 8Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M6 8 5.4 5H3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="8.2" cy="19" r="1.4" fill="currentColor"/>
+              <circle cx="17" cy="19" r="1.4" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Shop Takealot</span>
+            <span class="link-meta">Retail range and consumer demand signal</span>
+          </span>
+          <span class="arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          class="link-button amazon"
+          href="https://www.amazon.co.za/s?k=Dala&amp;ref=bl_dp_s_web_0"
+          aria-label="Shop Dala products on Amazon South Africa"
+        >
+          <span class="button-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 8h14l-1.1 10H6.1L5 8Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M9 8a3 3 0 0 1 6 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M8 14c2.2 1.8 5.6 1.8 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Shop Amazon</span>
+            <span class="link-meta">Marketplace presence in South Africa</span>
+          </span>
+          <span class="arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </nav>
+
+      <section class="capability-panel" aria-label="Dala manufacturing capability">
+        <p class="capability-kicker">Manufacturing capability</p>
+        <h2>High-volume manufacturing expertise for serious retail ranges.</h2>
+        <p class="capability-copy">
+          Dala supports branded, OEM, and custom manufacturing across art,
+          craft, stationery, and educational product categories.
+        </p>
+        <ul class="capability-list">
+          <li><span>High-volume production for retail-ready product lines</span></li>
+          <li><span>Custom manufacturing, packing, and range development</span></li>
+          <li><span>Category knowledge across schools, classrooms, and trade</span></li>
+        </ul>
+      </section>
+
+      <section class="feature" aria-label="Dala complete back-to-school educational range">
+        <img
+          class="product-shot"
+          src="image/TED-DNB_ABC123 DOUGH SET WITH ROLLER &amp; SLICER_6009705687008_LID.webp"
+          alt="Dala ABC123 dough kit with colourful letters and numbers"
+        >
+        <div class="feature-text">
+          <strong>A complete back-to-school line, built over decades.</strong>
+          <p>
+            Since 1992, Dala has developed practical, colourful, classroom-ready
+            products that help retailers cover the full school-year demand.
+          </p>
+        </div>
+      </section>
+
+      
+
+      <div class="socials" aria-label="Social links">
+        <a
+          class="social-link facebook"
+          href="https://www.facebook.com/DalaArtSupplies/"
+          aria-label="Dala on Facebook"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M14.2 8.2V6.8c0-.7.5-.9.9-.9h2.3V2.2L14.1 2c-3.6 0-4.4 2.7-4.4 4.4v1.8H7v4h2.7V22h4.1v-9.8h3.1l.5-4h-3.2Z"/>
+          </svg>
+        </a>
+        <a
+          class="social-link instagram"
+          href="https://www.instagram.com/kv_art_dala/"
+          aria-label="Dala on Instagram"
+        >
+          <svg width="29" height="29" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+          </svg>
+        </a>
+        <a
+          class="social-link tiktok"
+          href="https://www.tiktok.com/@dala.art?_r=1&amp;_t=ZS-96lnYoFCBN7"
+          aria-label="Dala on TikTok"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M15.7 3c.3 2.4 1.7 3.9 4.1 4.1v3.4a7.6 7.6 0 0 1-4-1.2v5.9c0 3.5-2.4 5.8-5.8 5.8-3.1 0-5.4-2.1-5.4-5.1 0-3.2 2.5-5.3 5.8-5.3.4 0 .7 0 1 .1v3.5a3.2 3.2 0 0 0-1.1-.2c-1.4 0-2.3.8-2.3 1.9 0 1.1.8 1.9 2 1.9 1.3 0 2.1-.8 2.1-2.5V3h3.6Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p class="brand-message">Dala - Manufacturing for Education Since 1992</p>
+        <div class="chalk-line" aria-hidden="true">
+          <span style="--tilt:-4deg">scale</span>
+          <span style="--tilt:3deg">+</span>
+          <span style="--tilt:5deg">range</span>
+          <span style="--tilt:-3deg">=</span>
+          <span style="--tilt:4deg">back-to-school supply</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
