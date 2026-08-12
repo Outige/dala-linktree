@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="image/dala-fav-red-yellow.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta
+      name="description"
+      content="Meet Dala at SARCDA 2026 for trade support, catalogue access, OEM manufacturing and retail product links."
+    >
+    <meta property="og:title" content="Dala at SARCDA 2026">
+    <meta
+      property="og:description"
+      content="Fast SARCDA links for Dala and Teddy: pricing, catalogue, OEM, retail proof and contact."
+    >
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Dala at SARCDA 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        --charcoal: #282727;
+        --paper: #fbfcfc;
+        --red: #de2225;
+        --gold: #e2a327;
+        --line: rgba(251, 252, 252, 0.34);
+        --muted: rgba(251, 252, 252, 0.76);
+        --max-card: 560px;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-height: 100%;
+        background: var(--charcoal);
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        background: var(--charcoal);
+        color: var(--paper);
+        font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif;
+        letter-spacing: 0;
+        text-rendering: geometricPrecision;
+      }
+
+      body,
+      .shell {
+        max-width: 100%;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 4px;
+      }
+
+      .shell {
+        width: min(100%, var(--max-card));
+        min-height: 100dvh;
+        margin: 0 auto;
+        padding:
+          max(18px, env(safe-area-inset-top))
+          clamp(14px, 4.6vw, 28px)
+          max(28px, env(safe-area-inset-bottom));
+      }
+
+      .brand-strip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(12px, 4vw, 20px);
+        min-height: 72px;
+        padding-bottom: clamp(16px, 5vw, 28px);
+        overflow: hidden;
+      }
+
+      .dala-mark {
+        flex: 0 1 auto;
+        width: clamp(126px, 42vw, 180px);
+        min-width: 0;
+      }
+
+      .teddy-mark {
+        flex: 0 1 auto;
+        width: clamp(148px, 50vw, 210px);
+        min-width: 0;
+      }
+
+      .hero {
+        min-height: 0;
+        display: grid;
+        align-content: start;
+        padding: clamp(8px, 2vw, 12px) 0 clamp(18px, 5vw, 28px);
+      }
+
+      .event-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 4.3vw, 1.28rem);
+        line-height: 1;
+      }
+
+      .event-label::before {
+        width: 38px;
+        height: 8px;
+        background: var(--red);
+        content: "";
+      }
+
+      h1 {
+        max-width: 5.8ch;
+        margin: clamp(22px, 7vw, 38px) 0 clamp(4px, 1.5vw, 8px);
+        font-size: clamp(3.8rem, 15.2vw, 6.4rem);
+        font-weight: 400;
+        line-height: 0.84;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 span {
+        display: block;
+      }
+
+      .gold {
+        color: var(--gold);
+      }
+
+      .red {
+        color: var(--red);
+      }
+
+      .hero-note {
+        max-width: 15rem;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1.08rem, 4.9vw, 1.42rem);
+        line-height: 1.02;
+        text-transform: uppercase;
+      }
+
+      .hero-note strong {
+        color: var(--paper);
+        font-weight: 400;
+      }
+
+      .quick-links {
+        border-top: 1px solid var(--line);
+      }
+
+      .link-row {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: clamp(86px, 24vw, 124px);
+        padding: clamp(15px, 4.7vw, 24px) clamp(72px, 20vw, 92px) clamp(15px, 4.7vw, 24px) 0;
+        border-bottom: 1px solid var(--line);
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(226, 163, 39, 0.2);
+      }
+
+      .open-mark {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        min-width: clamp(56px, 15vw, 74px);
+        min-height: clamp(38px, 10vw, 48px);
+        place-items: center;
+        align-self: center;
+        padding: 5px 8px 4px;
+        border: 2px solid var(--red);
+        background: var(--charcoal);
+        color: var(--gold);
+        font-size: clamp(1rem, 4vw, 1.18rem);
+        line-height: 0.92;
+        text-align: center;
+        transition: background-color 140ms ease, color 140ms ease;
+      }
+
+      .link-row > span {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      .link-row > .open-mark {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        flex: 0 0 auto;
+        margin-left: auto;
+        transform: translateY(-50%);
+      }
+
+      .link-row:active,
+      .link-row:hover {
+        color: var(--gold);
+      }
+
+      .link-row:active .open-mark,
+      .link-row:hover .open-mark {
+        background: var(--red);
+        color: var(--paper);
+      }
+
+      .link-kicker {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--gold);
+        font-size: clamp(0.92rem, 3.8vw, 1.08rem);
+        line-height: 1;
+      }
+
+      .link-title {
+        display: block;
+        max-width: 7.4ch;
+        font-size: clamp(2.15rem, 10vw, 3.25rem);
+        line-height: 0.88;
+        text-transform: uppercase;
+      }
+
+      .link-row:nth-child(3n) .link-kicker,
+      .link-row:nth-child(3n) .accent {
+        color: var(--red);
+      }
+
+      .contact {
+        padding: clamp(26px, 8vw, 42px) 0 clamp(20px, 6vw, 34px);
+      }
+
+      .section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 12px;
+        color: var(--gold);
+        font-size: clamp(1rem, 4vw, 1.16rem);
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .section-label::after {
+        width: 30px;
+        height: 7px;
+        background: var(--red);
+        content: "";
+      }
+
+      .contact h2,
+      .proof h2 {
+        margin: 0;
+        font-size: clamp(3.1rem, 16vw, 5.4rem);
+        font-weight: 400;
+        line-height: 0.86;
+        text-transform: uppercase;
+      }
+
+      .contact-lines {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .contact-link {
+        width: fit-content;
+        color: var(--paper);
+        font-size: clamp(1.45rem, 7vw, 2.3rem);
+        line-height: 0.95;
+        text-decoration-color: var(--red);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+        text-transform: uppercase;
+      }
+
+      .contact-link:active,
+      .contact-link:hover {
+        color: var(--gold);
+      }
+
+      .proof {
+        padding: clamp(22px, 7vw, 36px) 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .proof-copy {
+        margin: 12px 0 18px;
+        color: var(--muted);
+        font-size: clamp(1.1rem, 4.9vw, 1.44rem);
+        line-height: 1.02;
+        text-transform: uppercase;
+      }
+
+      .product-slice {
+        width: 100%;
+        aspect-ratio: 16 / 7;
+        overflow: hidden;
+        border: 2px solid var(--red);
+      }
+
+      .product-slice img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 45%;
+      }
+
+      .socials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        margin-top: clamp(28px, 8vw, 42px);
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .socials a {
+        display: grid;
+        min-height: 58px;
+        place-items: center;
+        background: var(--charcoal);
+        color: var(--paper);
+        font-size: clamp(1.1rem, 5vw, 1.4rem);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .socials svg {
+        width: 28px;
+        height: 28px;
+        display: block;
+      }
+
+      .socials a:active,
+      .socials a:hover {
+        background: var(--red);
+        color: var(--paper);
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: clamp(18px, 6vw, 28px);
+        color: var(--muted);
+        font-size: clamp(1rem, 4vw, 1.15rem);
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 680px) {
+        body {
+          display: grid;
+          min-height: 100dvh;
+          place-items: start center;
+          padding: 30px;
+        }
+
+        .shell {
+          border-inline: 1px solid rgba(251, 252, 252, 0.16);
+        }
+
+        .brand-strip {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="page-title">
+      <header class="brand-strip" aria-label="Dala and Teddy">
+        <img
+          class="dala-mark"
+          src="image/dala-logo bw.png"
+          alt="Dala"
+          width="1416"
+          height="672"
+        >
+        <img
+          class="teddy-mark"
+          src="image/TEDDY-red.png"
+          alt="Teddy"
+          width="1659"
+          height="404"
+        >
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="event-label">SARCDA 2026</p>
+          <h1 id="page-title">
+            <span>Dala</span>
+            <span class="gold">at</span>
+            <span class="red">Sarcda.</span>
+          </h1>
+        </div>
+        <p class="hero-note">
+          <strong>Creative manufacturing at scale.</strong>
+          Trade links, catalogue access and follow-up in one place.
+        </p>
+      </section>
+
+      <nav class="quick-links" aria-label="Dala SARCDA links">
+        <a
+          class="link-row"
+          href="https://links.dalacolour.com/tieg.html"
+          aria-label="Open the Dala 2026 catalogue"
+        >
+          <span>
+            <span class="link-kicker">REACH US</span>
+            <span class="link-title">Tieg O'SUllivan</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="https://indd.adobe.com/view/4cfe9dd9-c1e6-4bd5-8273-4237b3a3384f"
+          aria-label="Open the Dala 2026 catalogue"
+        >
+          <span>
+            <span class="link-kicker">View our</span>
+            <span class="link-title">2026 Catalogue.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="http://oem.dalacolour.com"
+          aria-label="Explore Dala OEM and private label manufacturing"
+        >
+          <span>
+            <span class="link-kicker">Build with</span>
+            <span class="link-title">OEM <span class="accent">&amp;</span> Private Label.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="https://www.dala.co.za/"
+          aria-label="Visit the Dala website"
+        >
+          <span>
+            <span class="link-kicker">Explore</span>
+            <span class="link-title">Dala Products.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="mailto:tieg@dala.co.za?subject=SARCDA%202026%20Dala%20Enquiry"
+          aria-label="Email Dala about SARCDA 2026 trade supply"
+        >
+          <span>
+            <span class="link-kicker">Contact</span>
+            <span class="link-title">Dala Direct.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="https://www.takealot.com/all?filter=Brand:Dala&amp;filter=Rating:4.0-5.0"
+          aria-label="See Dala products on Takealot"
+        >
+          <span>
+            <span class="link-kicker">Retail proof</span>
+            <span class="link-title">Dala on Takealot.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+
+        <a
+          class="link-row"
+          href="https://www.amazon.co.za/s?k=Dala&amp;ref=bl_dp_s_web_0"
+          aria-label="See Dala products on Amazon South Africa"
+        >
+          <span>
+            <span class="link-kicker">Marketplace</span>
+            <span class="link-title">Dala on Amazon.</span>
+          </span>
+          <span class="open-mark" aria-hidden="true">OPEN</span>
+        </a>
+      </nav>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="section-label">Contact</p>
+        <h2 id="contact-title">
+          <span class="gold">KOBUS</span><br>
+          GROENEWALD
+        </h2>
+        <div class="contact-lines">
+          <a
+            class="contact-link"
+            href="mailto:kobus@dala.co.za?subject=SARCDA%202026%20Dala%20Enquiry"
+          >
+            kobus@dala.co.za
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="section-label">Contact</p>
+        <h2 id="contact-title">
+          <span class="gold">CONNOR</span><br>
+          FICK
+        </h2>
+        <div class="contact-lines">
+          <a
+            class="contact-link"
+            href="mailto:connor@dala.co.za?subject=SARCDA%202026%20Dala%20Enquiry"
+          >
+            connor@dala.co.za
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="section-label">Contact</p>
+        <h2 id="contact-title">
+          <span class="gold">Tieg</span><br>
+          O'SULLIVAN
+        </h2>
+        <div class="contact-lines">
+          <a
+            class="contact-link"
+            href="mailto:tieg@dala.co.za?subject=SARCDA%202026%20Dala%20Enquiry"
+          >
+            tieg@dala.co.za
+          </a>
+        </div>
+      </section>
+
+      <section class="proof" aria-labelledby="proof-title">
+        <p class="section-label">Range</p>
+        <h2 id="proof-title">Back-to-school built over decades.</h2>
+        <p class="proof-copy">
+          Branded, OEM and custom manufacturing across art, craft, stationery
+          and educational product categories since 1992.
+        </p>
+        <div class="product-slice">
+          <img
+            src="image/TED-DNB_ABC123 DOUGH SET WITH ROLLER &amp; SLICER_6009705687008_LID.webp"
+            alt="Teddy ABC123 dough set"
+            loading="lazy"
+          >
+        </div>
+      </section>
+
+      <div class="socials" aria-label="Social links">
+        <a href="https://www.facebook.com/DalaArtSupplies/" aria-label="Dala on Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M14.2 8.2V6.8c0-.7.5-.9.9-.9h2.3V2.2L14.1 2c-3.6 0-4.4 2.7-4.4 4.4v1.8H7v4h2.7V22h4.1v-9.8h3.1l.5-4h-3.2Z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/kv_art_dala/" aria-label="Dala on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@dala.art?_r=1&amp;_t=ZS-96lnYoFCBN7" aria-label="Dala on TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M15.7 3c.3 2.4 1.7 3.9 4.1 4.1v3.4a7.6 7.6 0 0 1-4-1.2v5.9c0 3.5-2.4 5.8-5.8 5.8-3.1 0-5.4-2.1-5.4-5.1 0-3.2 2.5-5.3 5.8-5.3.4 0 .7 0 1 .1v3.5a3.2 3.2 0 0 0-1.1-.2c-1.4 0-2.3.8-2.3 1.9 0 1.1.8 1.9 2 1.9 1.3 0 2.1-.8 2.1-2.5V3h3.6Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>Dala x Teddy</span>
+        <span>Cape Town, South Africa</span>
+      </footer>
+    </main>
+  </body>
+</html>
